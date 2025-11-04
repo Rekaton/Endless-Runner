@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
     private Rigidbody2D rb;
+    public GameObject panel;
 
     void Awake()
     {
@@ -24,4 +25,9 @@ public class PlayerController : MonoBehaviour
         // Apply vertical movement
         rb.linearVelocity = new Vector2(0, vertical * speed);
     }
+
+    //private void OnDestroy()
+    //{
+    //    panel.SetActive(true);
+    //}
 }
