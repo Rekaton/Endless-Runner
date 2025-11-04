@@ -26,8 +26,8 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = new Vector2(0, vertical * speed);
     }
 
-    //private void OnDestroy()
-    //{
-    //    panel.SetActive(true);
-    //}
+    private void OnDestroy()
+    {
+        panel.SetActive(true);
+    }
 }
