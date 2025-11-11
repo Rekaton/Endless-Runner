@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     public GameObject panel;
 
-    void Awake()
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
